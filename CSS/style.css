@@ -1,0 +1,74 @@
+body
+{
+    background-color: white;
+}
+
+/*selektor znacznika*/
+p
+{
+    color: orange;
+}
+
+#paragraf
+{
+    color: violet;
+}
+
+.klasa-paragrafu
+{
+    color: green;
+}
+
+/*Łaczenie selektorów*/
+
+a, span, div
+{
+    color: blue;
+}
+
+ul a
+{
+    color: aqua;
+}
+
+/*Selektor elementu potomnego*/
+div a
+{
+    color: black;
+}
+
+/*Selektor bliskiego rodzeńswa*/
+
+h1 + h3
+{
+    color: yellow;
+}
+
+/*Selektor bliskiego rodzeństwa*/
+
+h4 ~ p
+{
+    color: yellow;
+    background-color: black;
+}
+
+/*Selektor wyklucający*/
+
+#lista-agnieszki  > li:not(.wykluczony)
+{
+    color: pink;
+}
+
+/*Selektor kolejnego elementu potomnego*/
+
+ul#lista-Karoliny > ol
+{
+    background-color: aquamarine;
+    color: darkblue;
+        border-bottom: 1px solid black;
+}
+
+ul#lista-Karoliny > ol:nth-child(3)
+{
+    color: red;
+}
